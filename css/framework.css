@@ -1,0 +1,158 @@
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.d-block {
+    display: block;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.bg-w {
+    background-color: white;
+}
+
+.bg-eee {
+    background-color: #eee;
+}
+
+.bg-violet {
+    background-color: violet;
+}
+
+.c-black {
+    color: black;
+}
+
+.c-grey {
+    color: var(--grey-color);
+}
+
+.c-white {
+    color: white;
+}
+
+.bdr-grey {
+    border: 1px solid #ccc;
+}
+
+.b-none {
+    border: none;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.txt-c {
+    text-align: center;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+
+.rad-6 {
+    border-radius: 6px;
+}
+
+.rad-10 {
+    border-radius: 10px;
+}
+
+.rad-20 {
+    border-radius: 20px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-shape {
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+@media(max-width:767px) {
+    .ps-5 {
+        padding: 5px;
+    }
+
+    .txt-c-mobile {
+        text-align: center;
+    }
+
+    .block-mobile {
+        display: block;
+    }
+
+
+    .hide-mobile {
+        display: none;
+    }
+}

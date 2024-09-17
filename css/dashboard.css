@@ -1,0 +1,67 @@
+.welcome {
+    overflow: hidden;
+}
+
+.welcome .intro img {
+    width: 220px;
+    margin-bottom: -10px;
+}
+
+.welcome .avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 2px;
+    margin-left: 20px;
+    margin-top: -32px;
+    box-shadow: 0 0 5px #ddd;
+}
+
+.welcome .body {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.welcome .body>div {
+    flex: 1;
+}
+
+.welcome .visit {
+    margin: 0 15px 15px auto;
+    transition: .03s;
+}
+
+.welcome .visit:hover {
+    background-color: rgba(204, 119, 204, 0.702);
+}
+
+@media(max-width:767px) {
+    .welcome .intro {
+        padding-bottom: 30px;
+
+    }
+
+    .welcome .avatar {
+        margin-left: 0;
+    }
+
+    .welcome .body>div:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.quick-draft textarea {
+    resize: none;
+    min-height: 180px;
+}
+
+.quick-draft .save {
+    margin-left: auto;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.quick-draft .save:hover {
+    background-color: rgba(204, 119, 204, 0.702);
+}

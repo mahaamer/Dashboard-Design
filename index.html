@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dashboard</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="css/sidebar.css" />
+		<link rel="stylesheet" href="css/content.css" />
+		<link rel="stylesheet" href="css/dashboard.css" />
+		<link rel="stylesheet" href="css/master.css" />
+		<link rel="stylesheet" href="css/framework.css" />
+	</head>
+	<body>
+		<div class="page d-flex">
+			<div class="sidebar ps-5 ps-5 p-20 bg-w p-relative">
+				<h3 class="txt-c mt-0 p-relative">Maha's Dashboard</h3>
+				<ul>
+					<li>
+						<a
+							class="active d-flex align-center fs-14 p-10 rad-6 c-black"
+							href="index.html"
+						>
+							<i class="fa-solid fa-bars fa-fw"></i><span>Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a
+							href="settings.html"
+							class="d-flex align-center fs-14 p-10 rad-6 c-black"
+							><i class="fa-solid fa-gear fa-fw"></i><span>Settings</span></a
+						>
+					</li>
+					<li>
+						<a
+							href="profile.html"
+							class="d-flex align-center fs-14 p-10 rad-6 c-black"
+							><i class="fa-regular fa-user fa-fw"></i><span>Profile</span></a
+						>
+					</li>
+					<li>
+						<a
+							href="projects.html"
+							class="d-flex align-center fs-14 p-10 rad-6 c-black"
+							><i class="fa-solid fa-bars-progress fa-fw"></i
+							><span>Projects</span></a
+						>
+					</li>
+					<li>
+						<a
+							href="course.html"
+							class="d-flex align-center fs-14 p-10 rad-6 c-black"
+							><i class="fa-solid fa-graduation-cap fa-fw"></i
+							><span>Course</span></a
+						>
+					</li>
+					<li>
+						<a
+							href="friends.html"
+							class="d-flex align-center fs-14 p-10 rad-6 c-black"
+							><i class="fa-solid fa-user-group fa-fw"></i
+							><span>Friends</span></a
+						>
+					</li>
+					<li>
+						<a
+							href="files.html"
+							class="d-flex align-center fs-14 p-10 rad-6 c-black"
+							><i class="fa-regular fa-file fa-fw"></i><span>Files</span></a
+						>
+					</li>
+					<li>
+						<a
+							href="plans.html"
+							class="d-flex align-center fs-14 p-10 rad-6 c-black"
+							><i class="fa-regular fa-credit-card fa-fw"></i
+							><span>Plans</span></a
+						>
+					</li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="content w-full">
+				<div class="head flex-between p-15 bg-w">
+					<div class="search p-relative">
+						<input
+							class="p-10 bdr-grey rad-20"
+							type="text"
+							placeholder="Type A Keyword"
+						/>
+					</div>
+					<div class="icons d-flex align-center">
+						<span class="notification p-relative"
+							><i class="fa-regular fa-bell fa-lg"></i
+						></span>
+						<img src="imgs/avatar.png" alt="" />
+					</div>
+				</div>
+				<h1 class="p-relative">Dashboard</h1>
+				<div class="wrapper d-grid gap-20">
+					<div class="welcome bg-w txt-c-mobile rad-10 block-mobile">
+						<div class="intro p-20 d-flex space-between bg-eee">
+							<div>
+								<h2 class="m-0">Welcome</h2>
+								<p class="c-grey mt-5">Maha</p>
+							</div>
+							<img src="imgs/welcome.png" alt="" class="hide-mobile" />
+						</div>
+						<img src="imgs/avatar.png" alt="" class="avatar" />
+						<div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
+							<div>
+								Maha Amer<span class="d-block c-grey fs-14 mt-10"
+									>Developer</span
+								>
+							</div>
+							<div>
+								10<span class="d-block c-grey fs-14 mt-10">Projects</span>
+							</div>
+							<div>
+								$3000<span class="d-block c-grey fs-14 mt-10">Earned</span>
+							</div>
+						</div>
+						<a
+							href="profile.html"
+							class="visit d-block fs-14 bg-violet c-white w-fit btn-shape"
+							>Profile</a
+						>
+					</div>
+					<div class="quick-draft bg-w p-20 txt-c-mobile rad-10 block-mobile">
+						<h2 class="mb-10">Quick Draft</h2>
+						<p class="mb-20 c-grey fs-15">Write A Draft For Your Ideas</p>
+						<form action="">
+							<input
+								type="text"
+								class="d-block mb-20 w-full p-10 b-none bg-eee rad-6"
+								id=""
+								placeholder="Title"
+							/>
+							<textarea
+								class="d-block mb-20 w-full p-10 b-none bg-eee rad-6"
+								name=""
+								id=""
+								placeholder="Your Thought"
+							></textarea>
+							<input
+								class="save d-block fs-14 bg-violet b-none w-fit c-white btn-shape"
+								type="submit"
+								value="Save"
+							/>
+						</form>
+					</div>
+					<div class="targets p-20 bg-w rad-10">
+						<h2 class="mb-10">Yearly Targets</h2>
+						<p class="mb-20 c-grey fs-15">Targets Of The Year</p>
+
+						<div class="targets-row"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

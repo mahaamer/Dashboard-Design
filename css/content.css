@@ -1,0 +1,72 @@
+.content {
+    overflow: hidden;
+}
+
+.head .search::before {
+    font-family: 'Font Awesome 6 Free';
+    content: "\f002";
+    font-weight: 600;
+    position: absolute;
+    left: 35px;
+    font-size: 14px;
+    transform: translateY(-50%);
+    top: 50%;
+    color: var(--grey-color);
+}
+
+.head .search input {
+    margin-left: 25px;
+    padding-left: 40px;
+    width: 170px;
+    transition: width 0.3s;
+}
+
+.head .search input:focus {
+    width: 200px;
+}
+
+.head .search input:focus::placeholder {
+    opacity: 0;
+}
+
+.head .icons .notification::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: violet;
+    border-radius: 50%;
+    left: 10px
+}
+
+.head .icons img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.page h1 {
+    margin: 20px 20px 40px;
+    color: violet;
+}
+
+.page h1::before, .page h1::after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.page h1::before {
+    background-color: white;
+    width: 120px;
+    border-radius: 10px;
+}
+
+.page h1::after {
+    background-color: violet;
+    width: 40px;
+    border-radius: 10px;
+}
