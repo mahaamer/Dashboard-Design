@@ -17,12 +17,14 @@
 		/>
 		<link rel="stylesheet" href="css/sidebar.css" />
 		<link rel="stylesheet" href="css/content.css" />
+		<link rel="stylesheet" href="css/setting.css" />
+		<link rel="stylesheet" href="css/dashboard.css" />
 		<link rel="stylesheet" href="css/master.css" />
 		<link rel="stylesheet" href="css/framework.css" />
 	</head>
 	<body>
 		<div class="page d-flex">
-			<div class="sidebar ps-5 p-20 bg-w p-relative">
+			<div class="sidebar ps-5 ps-5 p-20 bg-w p-relative">
 				<h3 class="txt-c mt-0 p-relative">Maha's Dashboard</h3>
 				<ul>
 					<li>
@@ -57,7 +59,7 @@
 					</li>
 					<li>
 						<a
-							href="cocourseurse.html"
+							href="course.html"
 							class="d-flex align-center fs-14 p-10 rad-6 c-black"
 							><i class="fa-solid fa-graduation-cap fa-fw"></i
 							><span>Course</span></a
@@ -86,8 +88,6 @@
 							><span>Plans</span></a
 						>
 					</li>
-					<li></li>
-					<li></li>
 				</ul>
 			</div>
 			<div class="content w-full">
@@ -104,6 +104,72 @@
 							><i class="fa-regular fa-bell fa-lg"></i
 						></span>
 						<img src="imgs/avatar.png" alt="" />
+					</div>
+				</div>
+				<h1 class="p-relative">Settings</h1>
+				<div class="settings-page m-20 d-grid gap-20">
+					<div class="p-20 bg-w rad-10">
+						<h2 class="mt-0 mb-10">Site Control</h2>
+						<p class="mt-0 mb-20 c-grey fs-15">
+							Control The Website If There Is Maintenance
+						</p>
+						<div class="mb-15 flex-between">
+							<div>
+								<span>Website Control</span>
+								<p class="c-grey mt-5 mb-0 fs-13">
+									Open/Close Website And Type The Reason
+								</p>
+							</div>
+							<div>
+								<label>
+									<input class="toggle-checkbox" type="checkbox" checked />
+									<div class="toggle-switch"></div>
+								</label>
+							</div>
+						</div>
+						<textarea
+							class="close-message p-10 rad-6 d-block w-full"
+							placeholder="Close Message Content"
+						></textarea>
+					</div>
+					<div class="p-20 bg-w rad-10">
+						<h2 class="mt-0 mb-10">General Info</h2>
+						<p class="mt-0 mb-20 c-grey fs-15">
+							General Information About Your Account
+						</p>
+						<div class="mb-15">
+							<label for="" class="fs-14 d-block mb-10 c-grey"
+								>First Name</label
+							>
+							<input
+								class="b-none p-10 rad-6 w-full d-block border-ccc"
+								type="text"
+								id="first"
+								placeholder="First Name"
+							/>
+						</div>
+						<div class="mb-15">
+							<label for="" class="fs-14 d-block mb-10 c-grey">Last Name</label>
+							<input
+								class="b-none p-10 rad-6 w-full d-block border-ccc"
+								type="text"
+								id="last"
+								placeholder="Last Name"
+							/>
+						</div>
+						<div>
+							<label for="email" class="fs-14 d-block mb-10 c-grey"
+								>Email</label
+							>
+							<input
+								class="email b-none p-10 rad-6 w-full d-block border-ccc mr-10"
+								type="email"
+								id="email"
+								placeholder="example@gmail.com"
+								disabled
+							/>
+							<a class="c-blue" href="#">Change</a>
+						</div>
 					</div>
 				</div>
 			</div>

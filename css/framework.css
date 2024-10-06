@@ -42,12 +42,24 @@
     margin-top: 10px;
 }
 
+.mt-15 {
+    margin-top: 15px;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
 
+.mt-25 {
+    margin-top: 25px;
+}
+
 .mr-10 {
     margin-right: 10px;
+}
+
+.mr-15 {
+    margin-right: 15px;
 }
 
 .mb-5 {
@@ -58,8 +70,16 @@
     margin-bottom: 10px;
 }
 
+.mb-15 {
+    margin-bottom: 15px;
+}
+
 .mb-20 {
     margin-bottom: 20px;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
 }
 
 .p-10 {
@@ -78,12 +98,24 @@
     padding-top: 15px;
 }
 
+.pt-20 {
+    padding-top: 20px;
+}
+
 .pb-10 {
     padding-bottom: 10px;
 }
 
 .pb-15 {
     padding-bottom: 15px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pl-15 {
+    padding-left: 15px;
 }
 
 .bg-w {
@@ -100,6 +132,10 @@
 
 .bg-blue {
     background-color: var(--blue-color);
+}
+
+.bg-red {
+    background-color: var(--red-color);
 }
 
 .bg-orange {
@@ -158,13 +194,23 @@
     width: fit-content;
 }
 
+.h-full {
+    height: 100%;
+}
+
 .txt-c {
     text-align: center;
+}
+
+.fs-13 {
+    font-size: 13px;
 }
 
 .fs-14 {
     font-size: 14px;
 }
+
+
 
 .fw-bold {
     font-weight: bold;
@@ -180,6 +226,14 @@
 
 .rad-20 {
     border-radius: 20px;
+}
+
+.rad-half {
+    border-radius: 50%;
+}
+
+.border-ccc {
+    border: 1px solid #ccc;
 }
 
 .flex-between {

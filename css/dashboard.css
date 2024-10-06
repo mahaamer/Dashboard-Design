@@ -212,3 +212,194 @@
 .latest-uploads ul li img {
     width: 40px;
 }
+
+.last-project ul::before {
+    content: '';
+    position: absolute;
+    background-color: violet;
+    width: 2px;
+    height: 100%;
+    left: 11px;
+}
+
+.last-project ul li::before {
+    content: '';
+    background-color: white;
+    border: 2px solid white;
+    outline: 2px solid violet;
+    width: 20px;
+    height: 20px;
+    display: block;
+    z-index: 1;
+    border-radius: 50%;
+    margin-right: 15px;
+
+}
+
+.last-project ul li.done::before {
+    background-color: violet;
+
+}
+
+.last-project ul li.current::before {
+    animation: change-color .8s infinite alternate;
+}
+
+.last-project .launch-icon {
+    position: absolute;
+    width: 160px;
+    right: 0;
+    bottom: 0;
+    opacity: .2;
+}
+
+
+.reminders ul li .key {
+    width: 15px;
+    height: 15px
+}
+
+.reminders ul li>.blue {
+    border-left: 2px solid var(--blue-color);
+}
+
+.reminders ul li>.green {
+    border-left: 2px solid var(--green-color);
+}
+
+.reminders ul li>.orange {
+    border-left: 2px solid var(--orange-color);
+}
+
+.reminders ul li>.red {
+    border-left: 2px solid var(--red-color);
+}
+
+.latest-post .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.latest-post .post-contnet {
+    text-transform: capitalize;
+    line-height: 1.8;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    min-height: 140px;
+}
+
+.social-media .box {
+    padding-left: 70px;
+}
+
+.social-media .box i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 52px;
+    transition: 0.3s;
+}
+
+.social-media .box i:hover {
+    transform: rotate(5deg);
+}
+
+.social-media .twitter {
+    background-color: rgba(29, 160, 242, 0.212);
+    color: #1da1f2;
+}
+
+.social-media .twitter i, .social-media .twitter a {
+    background-color: #1da1f2;
+}
+
+.social-media .facebook {
+    background-color: rgb(24 119 242 / 20%);
+    color: #1da1f2;
+}
+
+.social-media .facebook i,
+.social-media .facebook a {
+    background-color: #1877f2;
+}
+
+.social-media .youtube {
+    background-color: rgb(255 0 0 / 20%);
+    color: #ff0000;
+}
+
+.social-media .youtube i,
+.social-media .youtube a {
+    background-color: #ff0000;
+}
+
+.social-media .linkedin {
+    background-color: rgb(0 119 181 / 20%);
+    color: #0077b5;
+}
+
+.social-media .linkedin i,
+.social-media .linkedin a {
+    background-color: #0077b5;
+}
+
+.projects .responsive-table {
+    overflow-x: auto;
+
+}
+
+.projects table {
+    min-width: 1000px;
+    border-spacing: 0;
+}
+
+.projects thead td {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+.projects table td {
+    padding: 15px;
+}
+
+.projects table .label {
+    font-size: 13px;
+}
+
+.projects tbody td {
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    transition: .3s;
+}
+
+.projects tbody tr td:last-child {
+    border-right: 1px solid #eee;
+}
+
+.projects tbody tr:hover td {
+    background-color: #Faf7f7;
+}
+
+.projects table img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: white;
+}
+
+.projects table img:not(:first-child) {
+    margin-left: -20px;
+}
+
+
+@keyframes change-color {
+    from {
+        background-color: violet;
+    }
+
+    to {
+        background-color: white;
+    }
+}
