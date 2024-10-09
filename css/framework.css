@@ -26,6 +26,14 @@
     gap: 20px;
 }
 
+.m-0 {
+    margin: 0;
+}
+
+.m-15 {
+    margin: 15px;
+}
+
 .m-20 {
     margin: 20px;
 }
@@ -162,6 +170,10 @@
     color: var(--blue-color);
 }
 
+.c-violet {
+    color: rgb(224, 17, 224);
+}
+
 .c-orange {
     color: var(--orange-color);
 }
@@ -275,5 +287,9 @@
 
     .hide-mobile {
         display: none;
+    }
+
+    .w-full-mobile {
+        width: 100%;
     }
 }

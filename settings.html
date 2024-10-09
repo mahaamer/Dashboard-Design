@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Dashboard</title>
+		<title>Settings</title>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -168,7 +168,146 @@
 								placeholder="example@gmail.com"
 								disabled
 							/>
-							<a class="c-blue" href="#">Change</a>
+							<a class="c-violet" href="#">Change</a>
+						</div>
+					</div>
+					<div class="p-20 bg-w rad-10">
+						<h2 class="mt-0 mb-10">Security Info</h2>
+						<p class="mt-0 mb-20 c-grey fs-15">
+							Security Information About Your Account
+						</p>
+						<div class="sec-box mb-15 flex-between">
+							<div>
+								<span>Password</span>
+								<p class="c-grey mt-5 fs-13">Last Change On 25/10/2024</p>
+							</div>
+							<a class="button bg-violet c-white btn-shape" href="#"> Change</a>
+						</div>
+						<div class="sec-box mb-15 flex-between">
+							<div>
+								<span>Two-Factor Authentication</span>
+								<p class="c-grey mt-5 mb-0 fs-13">Enable/Disable The Feature</p>
+							</div>
+							<label>
+								<input class="toggle-checkbox" type="checkbox" checked />
+								<div class="toggle-switch"></div>
+							</label>
+						</div>
+						<div class="sec-box flex-between">
+							<div>
+								<span>Devices</span>
+								<p class="c-grey mt-5 mb-0 fs-13">
+									Check The Login Devices List
+								</p>
+							</div>
+							<a class="bg-eee c-black btn-shape" href="#">Devices</a>
+						</div>
+					</div>
+					<div class="social-boxes p-20 bg-w rad-10">
+						<h2 class="mb-10">Social Info</h2>
+						<p class="mb-20 c-grey fs-15">Social Media Information</p>
+						<div class="d-flex mb-15 align-center">
+							<i class="fa-brands fa-twitter flex-center c-grey"></i>
+							<input class="w-full" type="text" placeholder="Twitter" />
+						</div>
+						<div class="d-flex align-center mb-15">
+							<i class="fa-brands fa-facebook-f flex-center c-grey"></i>
+							<input
+								class="w-full"
+								type="text"
+								placeholder="Facebook Username"
+							/>
+						</div>
+						<div class="d-flex align-center mb-15">
+							<i class="fa-brands fa-linkedin flex-center c-grey"></i>
+							<input
+								class="w-full"
+								type="text"
+								placeholder="Linkedin Username"
+							/>
+						</div>
+						<div class="d-flex align-center">
+							<i class="fa-brands fa-youtube flex-center c-grey"></i>
+							<input
+								class="w-full"
+								type="text"
+								placeholder="Youtube Username"
+							/>
+						</div>
+					</div>
+					<div class="widgets-control p-20 bg-w rad-10">
+						<h2 class="mt-0 mb-10">Widgets Control</h2>
+						<p class="mt-0 mb-20 c-grey fs-15">Show/Hide Widgets</p>
+						<div class="control d-flex align-center mb-15">
+							<input type="checkbox" id="one" />
+							<label for="one">Quick Draft</label>
+						</div>
+						<div class="control d-flex align-center mb-15">
+							<input type="checkbox" id="two" checked />
+							<label for="two">Yearly Targets</label>
+						</div>
+						<div class="control d-flex align-center mb-15">
+							<input type="checkbox" id="three" checked />
+							<label for="three">Tickets Statistics</label>
+						</div>
+						<div class="control d-flex align-center mb-15">
+							<input type="checkbox" id="four" checked />
+							<label for="four">Latest News</label>
+						</div>
+						<div class="control d-flex align-center mb-15">
+							<input type="checkbox" id="five" />
+							<label for="five">Latest Tasks</label>
+						</div>
+						<div class="control d-flex align-center mb-15">
+							<input type="checkbox" id="six" checked />
+							<label for="six">Top Search Items</label>
+						</div>
+					</div>
+					<div class="backup-control p-20 bg-w rad-10">
+						<h2 class="mt-0 mb-10">Backup Manger</h2>
+						<p class="mt-0 mb-20 c-grey fs-15">
+							Control Backup Time And Location
+						</p>
+						<div class="date d-flex align-center mb-15">
+							<input type="radio" name="time" id="daily" checked /><label
+								for="daily"
+								>Daily</label
+							>
+						</div>
+						<div class="date d-flex align-center mb-15">
+							<input type="radio" name="time" id="weekly" checked /><label
+								for="weekly"
+								>Weekly</label
+							>
+						</div>
+						<div class="date d-flex align-center mb-15">
+							<input type="radio" name="time" id="monthly" checked /><label
+								for="monthly"
+								>Monthly</label
+							>
+						</div>
+						<div class="servers d-flex align-center txt-c">
+							<input type="radio" name="servers" id="server-one" />
+							<div class="server mb-15 rad-10 w-full">
+								<label class="d-block m-15" for="server-one">
+									<i class="fa-solid fa-server d-block mb-10"></i>
+									Megaman
+								</label>
+							</div>
+							<input type="radio" name="servers" id="server-two" checked />
+							<div class="server mb-15 rad-10 w-full">
+								<label class="d-block m-15" for="server-two">
+									<i class="fa-solid fa-server d-block mb-10"></i>
+									Zero
+								</label>
+							</div>
+							<input type="radio" name="servers" id="server-three" />
+							<div class="server mb-15 rad-10 w-full">
+								<label class="d-block m-15" for="server-three">
+									<i class="fa-solid fa-server d-block mb-10"></i>
+									Sigma
+								</label>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -1,0 +1,142 @@
+@media (max-width: 767px) {
+    .profile-page .overview {
+        flex-direction: column;
+    }
+}
+
+.profile-page .avatar-box {
+    width: 300px;
+}
+
+@media (min-width: 768px) {
+    .profile-page .avatar-box {
+        border-right: 1px solid #eee;
+    }
+}
+
+.profile-page .avatar-box>img {
+    width: 120px;
+    height: 120px;
+}
+
+.profile-page .avatar-box .level {
+    height: 6px;
+    overflow: hidden;
+    margin: auto;
+    width: 70%;
+}
+
+.profile-page .avatar-box .level span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--blue-color);
+    border-radius: 6px;
+}
+
+.profile-page .info-box .box {
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.profile-page .info-box .box:hover {
+    background-color: #f9f9f9;
+}
+
+.profile-page .info-box .box>div {
+    min-width: 250px;
+    padding: 10px 0 0;
+}
+
+.profile-page .info-box h4 {
+    font-weight: normal;
+}
+
+/* Start Training Code */
+.profile-page .info-box .toggle-switch {
+    height: 20px;
+}
+
+@media (max-width: 767px) {
+    .profile-page .info-box .toggle-switch {
+        margin: auto;
+    }
+}
+
+.profile-page .info-box .toggle-switch::before {
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+}
+
+.profile-page .info-box .toggle-checkbox:checked+.toggle-switch::before {
+    left: 62px;
+}
+
+@media(max-width:767px) {
+    .other-data {
+        flex-direction: column;
+    }
+}
+
+.skills-card {
+    flex-grow: 1;
+}
+
+.skills-card ul li {
+    padding: 15px 0;
+}
+
+.skills-card ul li span {
+    background-color: #eee;
+    font-size: 14px;
+    display: inline-flex;
+    padding: 4px 10px;
+    margin: 2px;
+    border-radius: 6px;
+}
+
+.skills-card ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.activities {
+    flex-grow: 2;
+}
+
+.activities .activity:not(:last-of-type) {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.activities .activity img {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+}
+
+@media(min-width:768px) {
+    .activity .date {
+        margin-left: auto;
+        text-align: right;
+    }
+}
+
+@media(max-width:767px) {
+    .activity {
+        flex-direction: column;
+    }
+
+    .activity img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .activity .date {
+        margin-top: 15px;
+
+    }
+}
