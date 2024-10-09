@@ -1,9 +1,9 @@
-.profile-page {
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+.project-page {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 @media (max-width:767px) {
-    .profile-page {
+    .project-page {
         grid-template-columns: minmax(200px, 1fr);
         margin-left: 10px;
         margin-right: 10px;
@@ -12,12 +12,103 @@
 
 }
 
-.project .date {}
+.project .date {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
 
 .project h4 {
     font-weight: normal;
 }
 
-.project .team {}
+.project .team {
+    position: relative;
+    min-height: 80px;
+}
 
-.project .team {}
+.project .team img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.project .team a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.project .team a:nth-child(2) {
+    left: 25px;
+}
+
+.project .team a:nth-child(3) {
+    left: 50px;
+}
+
+.project .team a:nth-child(4) {
+    left: 75px
+}
+
+.project .team a:nth-child(5) {
+    left: 100px
+}
+
+.project .team a:hover {
+    z-index: 999;
+}
+
+.do {
+    justify-content: flex-end;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.do span {
+    padding: 3px 8px;
+    margin-left: 5px;
+    width: fit-content;
+}
+
+.info {
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.prog {
+    height: 8px;
+    width: 260px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.prog span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 6px;
+}
+
+@media (max-width:767px) {
+    .do {
+        flex-direction: column;
+
+    }
+
+    .do span:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .prog {
+        margin-bottom: 15px;
+    }
+}
