@@ -102,6 +102,10 @@
     padding: 20px;
 }
 
+.pt-10 {
+    padding-top: 10px;
+}
+
 .pt-15 {
     padding-top: 15px;
 }
@@ -198,6 +202,10 @@
     position: relative;
 }
 
+.p-absolute {
+    position: absolute;
+}
+
 .w-full {
     width: 100%;
 }
@@ -254,6 +262,10 @@
 
 .border-ccc {
     border: 1px solid #ccc;
+}
+
+.border-eee {
+    border: 1px solid #eee;
 }
 
 .flex-between {
