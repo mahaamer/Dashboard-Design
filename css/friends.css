@@ -1,0 +1,57 @@
+.friends-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width:767px) {
+    .friends-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+
+}
+
+.contact {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.contact i {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #666;
+    transition: 0.3s;
+    font-size: 13px;
+}
+
+.contact i:hover {
+    background-color: violet;
+    color: white;
+    font-weight: 700;
+}
+
+.friend .icons {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.friend .icons i {
+    margin-right: 5px;
+}
+
+.icons .vip {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    opacity: 0.2;
+}
